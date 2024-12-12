@@ -1,0 +1,22 @@
+﻿  CAY-2024.cpp
+  Error.cpp
+C:\Users\chere\OneDrive\Рабочий стол\КП\CAY-2024\CAY-2024\Error.cpp(42,2): warning C4002: слишком много аргументов для вызова макроса, подобного функции, "ERROR_ENTRY_NODEF"
+C:\Users\chere\OneDrive\Рабочий стол\КП\CAY-2024\CAY-2024\Error.cpp(43,2): warning C4002: слишком много аргументов для вызова макроса, подобного функции, "ERROR_ENTRY_NODEF"
+C:\Users\chere\OneDrive\Рабочий стол\КП\CAY-2024\CAY-2024\Error.cpp(44,2): warning C4002: слишком много аргументов для вызова макроса, подобного функции, "ERROR_ENTRY_NODEF"
+  FST.cpp
+  GRB.cpp
+  In.cpp
+  IT.cpp
+  LA.cpp
+C:\Users\chere\OneDrive\Рабочий стол\КП\CAY-2024\CAY-2024\LA.cpp(18,6): warning C4101: lexresult: неиспользованная локальная переменная
+C:\Users\chere\OneDrive\Рабочий стол\КП\CAY-2024\CAY-2024\LA.cpp(25,6): warning C4101: indexIT: неиспользованная локальная переменная
+  Log.cpp
+  LT.cpp
+  MFST.cpp
+  Out.cpp
+  Out.h
+  Parm.cpp
+  Создание кода...
+C:\Users\chere\OneDrive\Рабочий стол\КП\CAY-2024\CAY-2024\LA.cpp(42,1): warning C4715: LA::LA: значение возвращается не при всех путях выполнения
+CAY-2024\Debug\Out.obj : warning LNK4042: объект указан более одного раза; лишние не учитываются
+  CAY-2024.vcxproj -> C:\Users\chere\OneDrive\Рабочий стол\КП\CAY-2024\CAY-2024\Debug\CAY-2024.exe

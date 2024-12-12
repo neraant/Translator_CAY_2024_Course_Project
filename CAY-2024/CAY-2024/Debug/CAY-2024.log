@@ -1,0 +1,30 @@
+﻿  CAY-2024.cpp
+C:\Users\chere\OneDrive\Рабочий стол\КП\CAY-2024\CAY-2024\CAY-2024.cpp(21,16): warning C4101: lexTable: неиспользованная локальная переменная
+C:\Users\chere\OneDrive\Рабочий стол\КП\CAY-2024\CAY-2024\CAY-2024.cpp(22,15): warning C4101: idTable: неиспользованная локальная переменная
+  Error.cpp
+C:\Users\chere\OneDrive\Рабочий стол\КП\CAY-2024\CAY-2024\Error.cpp(56,2): warning C4002: слишком много аргументов для вызова макроса, подобного функции, "ERROR_ENTRY_NODEF"
+  FST.cpp
+C:\Users\chere\OneDrive\Рабочий стол\КП\CAY-2024\CAY-2024\FST.cpp(71,17): warning C4267: инициализация: преобразование из "size_t" в "short"; возможна потеря данных
+  Generator.cpp
+C:\Users\chere\OneDrive\Рабочий стол\КП\CAY-2024\CAY-2024\Generator.cpp(29,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\chere\OneDrive\Рабочий стол\КП\CAY-2024\CAY-2024\Generator.cpp(72,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\chere\OneDrive\Рабочий стол\КП\CAY-2024\CAY-2024\Generator.cpp(128,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\chere\OneDrive\Рабочий стол\КП\CAY-2024\CAY-2024\Generator.cpp(214,46): warning C4018: <: несоответствие типов со знаком и без знака
+  GRB.cpp
+  In.cpp
+  IT.cpp
+  LA.cpp
+  Log.cpp
+  LT.cpp
+  MFST.cpp
+C:\Users\chere\OneDrive\Рабочий стол\КП\CAY-2024\CAY-2024\MFST.cpp(199,150): warning C4474: "sprintf_s" : для строки формата передано слишком много аргументов
+C:\Users\chere\OneDrive\Рабочий стол\КП\CAY-2024\CAY-2024\MFST.cpp(289,66): warning C4267: =: преобразование из "size_t" в "short"; возможна потеря данных
+  Out.cpp
+  Parm.cpp
+  Polish.cpp
+  SA.cpp
+C:\Users\chere\OneDrive\Рабочий стол\КП\CAY-2024\CAY-2024\SA.cpp(199,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\chere\OneDrive\Рабочий стол\КП\CAY-2024\CAY-2024\SA.cpp(489,24): warning C4018: <: несоответствие типов со знаком и без знака
+  Создание кода...
+C:\Users\chere\OneDrive\Рабочий стол\КП\CAY-2024\CAY-2024\LA.cpp(785,1): warning C4715: LA::FST: значение возвращается не при всех путях выполнения
+  CAY-2024.vcxproj -> C:\Users\chere\OneDrive\Рабочий стол\КП\CAY-2024\Debug\CAY-2024.exe

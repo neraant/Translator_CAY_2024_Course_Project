@@ -1,0 +1,35 @@
+Id    |Identifier      |Data type |Identifier type  |Index        |Scope           |Value                         
+------------------------------------------------------------------------------------------------------------------
+0     |Power           |int       |func             |1            |global          |0                             
+1     |base            |int       |param            |1            |Power           |null                          
+2     |exponent        |int       |param            |1            |Power           |null                          
+3     |result          |int       |var              |3            |Power           |0                             
+4     |L0              |int       |literal          |3            |Power           |1                             
+5     |L1              |int       |literal          |4            |while_scope1    |0                             
+6     |L2              |int       |literal          |7            |while_scope1    |1                             
+7     |main            |void      |func             |11           |global          |
+8     |base            |int       |var              |13           |main            |0                             
+9     |L3              |int       |literal          |13           |main            |10                            
+10    |exponent        |int       |var              |14           |main            |0                             
+11    |L4              |int       |literal          |14           |main            |5                             
+12    |result          |int       |var              |15           |main            |0                             
+13    |L5              |int       |literal          |16           |if_scope3       |100                           
+14    |L6              |str       |literal          |19           |if_scope3       |" больше 100!"(12)
+15    |L7              |str       |literal          |24           |else_scope4     |" не больше 100!"(15)
+16    |currentDate     |str       |var              |26           |main            |""(0)
+17    |date            |str       |func             |26           |main            |""(0)
+18    |randomValue     |int       |var              |27           |main            |0                             
+19    |rand            |int       |func             |27           |main            |0                             
+20    |isEvenValue     |bool      |var              |28           |main            |false                         
+21    |isEven          |bool      |func             |28           |main            |false                         
+22    |L8              |int       |literal          |28           |main            |11                            
+23    |isEmptyValue    |bool      |var              |29           |main            |false                         
+24    |isEmpty         |bool      |func             |29           |main            |false                         
+25    |L9              |str       |literal          |29           |main            |"Hello!"(6)
+26    |textLength      |int       |var              |30           |main            |0                             
+27    |len             |int       |func             |30           |main            |0                             
+28    |L10             |str       |literal          |30           |main            |"Hello, World!"(13)
+29    |value           |int       |var              |31           |main            |0                             
+30    |L11             |int       |literal          |31           |main            |100                           
+31    |L12             |int       |literal          |31           |main            |2                             
+32    |L13             |int       |literal          |31           |main            |1                             

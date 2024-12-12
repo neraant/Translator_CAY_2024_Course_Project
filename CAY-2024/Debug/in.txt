@@ -1,0 +1,32 @@
+int func Power(int base, int exponent)
+{
+ var int result = 1;
+ while(exponent > 0)
+ {
+ result = result * base;
+ exponent = exponent - 1;
+ }
+ ret result;
+}
+main
+{
+ var int base = 10;
+ var int exponent = 5;
+ var int result = Power(base, exponent);
+ if(result > 100)
+ {
+ write(result);
+ writeline(" больше 100!");
+ }
+ else
+ {
+ write(result);
+ writeline(" не больше 100!");
+ }
+ var str currentDate = date();
+ var int randomValue = rand();
+ var bool isEvenValue = isEven(11);
+ var bool isEmptyValue = isEmpty("Hello!");
+ var int textLength = len("Hello, World!");
+ var int value = (randomValue - 100) * (2 - 1);
+}

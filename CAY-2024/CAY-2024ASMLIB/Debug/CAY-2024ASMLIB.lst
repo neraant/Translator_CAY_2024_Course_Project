@@ -1,0 +1,98 @@
+Microsoft (R) Macro Assembler Version 14.40.33811.0	    12/13/24 01:29:51
+CAY-2024ASMLIB.asm					     Page 1 - 1
+
+
+				.586
+				.model flat, stdcall
+				includelib kernel32.lib
+				includelib ../Debug/CAY-2024LIB.lib
+				ExitProcess PROTO : DWORD
+				extrn WriteInt : proc
+				extrn WriteLineInt : proc
+				extrn WriteStr : proc
+				extrn WriteLineStr : proc
+				extrn WriteBool : proc
+				extrn WriteLineBool : proc
+				extrn strcpy : proc
+
+ 00000000			.const
+
+ 00000000			.code
+ 00000000			copy_string proc
+ 00000000  55			    push ebp
+ 00000001  8B EC		    mov ebp, esp
+ 00000003  56			    push esi
+ 00000004  57			    push edi
+
+ 00000005  8B 75 0C		    mov esi, [ebp + 12]  ; Исходная строка
+ 00000008  8B 7D 08		    mov edi, [ebp + 8]   ; Строка назначения
+
+ 0000000B			copy_loop:
+ 0000000B  8A 06		    mov al, [esi]        ; Загружаем текущий символ
+ 0000000D  88 07		    mov [edi], al        ; Копируем символ
+				    
+ 0000000F  84 C0		    test al, al          ; Проверка на нулевой байт
+ 00000011  74 04		    jz copy_done         ; Если нулевой - завершаем
+				    
+ 00000013  46			    inc esi              ; Переход к следующему символу
+ 00000014  47			    inc edi
+ 00000015  EB F4		    jmp copy_loop
+
+ 00000017			copy_done:
+ 00000017  5F			    pop edi
+ 00000018  5E			    pop esi
+ 00000019  8B E5		    mov esp, ebp
+ 0000001B  5D			    pop ebp
+ 0000001C  C2 0008		    ret 8       
+ 0000001F			copy_string endp
+
+				end
+Microsoft (R) Macro Assembler Version 14.40.33811.0	    12/13/24 01:29:51
+CAY-2024ASMLIB.asm					     Symbols 2 - 1
+
+
+
+
+Segments and Groups:
+
+                N a m e                 Size     Length   Align   Combine Class
+
+CONST  . . . . . . . . . . . . .	32 Bit	 00000000 Para	  Public  'CONST'	 ReadOnly
+FLAT . . . . . . . . . . . . . .	GROUP
+_DATA  . . . . . . . . . . . . .	32 Bit	 00000000 Para	  Public  'DATA'	
+_TEXT  . . . . . . . . . . . . .	32 Bit	 0000001F Para	  Public  'CODE'	
+
+
+Procedures, parameters, and locals:
+
+                N a m e                 Type     Value    Attr
+
+ExitProcess  . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+copy_string  . . . . . . . . . .	P Near	 00000000 _TEXT	Length= 0000001F Public STDCALL
+  copy_loop  . . . . . . . . . .	L Near	 0000000B _TEXT	
+  copy_done  . . . . . . . . . .	L Near	 00000017 _TEXT	
+
+
+Symbols:
+
+                N a m e                 Type     Value    Attr
+
+@CodeSize  . . . . . . . . . . .	Number	 00000000h   
+@DataSize  . . . . . . . . . . .	Number	 00000000h   
+@Interface . . . . . . . . . . .	Number	 00000003h   
+@Model . . . . . . . . . . . . .	Number	 00000007h   
+@code  . . . . . . . . . . . . .	Text   	 _TEXT
+@data  . . . . . . . . . . . . .	Text   	 FLAT
+@fardata?  . . . . . . . . . . .	Text   	 FLAT
+@fardata . . . . . . . . . . . .	Text   	 FLAT
+@stack . . . . . . . . . . . . .	Text   	 FLAT
+WriteBool  . . . . . . . . . . .	L Near	 00000000 FLAT	External STDCALL
+WriteInt . . . . . . . . . . . .	L Near	 00000000 FLAT	External STDCALL
+WriteLineBool  . . . . . . . . .	L Near	 00000000 FLAT	External STDCALL
+WriteLineInt . . . . . . . . . .	L Near	 00000000 FLAT	External STDCALL
+WriteLineStr . . . . . . . . . .	L Near	 00000000 FLAT	External STDCALL
+WriteStr . . . . . . . . . . . .	L Near	 00000000 FLAT	External STDCALL
+strcpy . . . . . . . . . . . . .	L Near	 00000000 FLAT	External STDCALL
+
+	   0 Warnings
+	   0 Errors
